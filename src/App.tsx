@@ -3,6 +3,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Gamepad2, Video, ChevronLeft, ChevronRight, Play, Loader2, Folder, Search, AlertCircle, RefreshCw, SkipBack, SkipForward } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { Capacitor } from '@capacitor/core';
+
+const BASE_URL = Capacitor.getPlatform() === 'web' 
+  ? '' 
+  : 'https://kiddo-lyv99appk-kiddoplay107-1908s-projects.vercel.app';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -28,11 +33,19 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    if (view === 'player' && selectedVideo && videoRef.current) {
+      videoRef.current.play().catch(err => {
+        console.warn("Autoplay was prevented by the browser:", err);
+      });
+    }
+  }, [selectedVideo, view]);
+
   const fetchFolders = async () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch('/api/drive/folders');
+      const res = await fetch(`${BASE_URL}/api/drive/folders`);
       if (!res.ok) throw new Error('Could not connect to Google Drive');
       const data = await res.json();
       setFolders(data);
@@ -50,7 +63,7 @@ export default function App() {
     setError(null);
     setSelectedFolder(folder);
     try {
-      const res = await fetch(`/api/drive/videos/${folder.id}`);
+      const res = await fetch(`${BASE_URL}/api/drive/videos/${folder.id}`);
       if (!res.ok) throw new Error('Could not fetch videos from this folder');
       const data = await res.json();
       setVideos(data);
@@ -102,13 +115,6 @@ export default function App() {
       }
     }
   };
-
-  useEffect(() => {
-    if (selectedVideo && videoRef.current) {
-      videoRef.current.load();
-      videoRef.current.play().catch(() => {});
-    }
-  }, [selectedVideo]);
 
   const goBack = () => {
     if (view === 'player') setView('videos');
@@ -268,7 +274,8 @@ export default function App() {
               <div className="w-full aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border-8 border-white relative group">
                 <video 
                   ref={videoRef}
-                  src={`/api/drive/stream/${selectedVideo.id}`}
+                  key={selectedVideo.id}
+                  src={`${BASE_URL}/api/drive/stream/${selectedVideo.id}`}
                   controls
                   autoPlay
                   onTimeUpdate={handleVideoTimeUpdate}
