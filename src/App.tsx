@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Gamepad2, Video, ChevronLeft, ChevronRight, Play, Loader2, Folder, Search, AlertCircle, RefreshCw, SkipBack, SkipForward } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
@@ -26,6 +26,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const fetchFolders = async () => {
     setLoading(true);
@@ -101,6 +102,13 @@ export default function App() {
       }
     }
   };
+
+  useEffect(() => {
+    if (selectedVideo && videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(() => {});
+    }
+  }, [selectedVideo]);
 
   const goBack = () => {
     if (view === 'player') setView('videos');
@@ -259,7 +267,7 @@ export default function App() {
             >
               <div className="w-full aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border-8 border-white relative group">
                 <video 
-                  key={selectedVideo.id}
+                  ref={videoRef}
                   src={`/api/drive/stream/${selectedVideo.id}`}
                   controls
                   autoPlay
