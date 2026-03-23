@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Gamepad2, Video, ChevronLeft, Play, Loader2, Folder, Search, AlertCircle, RefreshCw } from 'lucide-react';
+import { Gamepad2, Video, ChevronLeft, ChevronRight, Play, Loader2, Folder, Search, AlertCircle, RefreshCw, SkipBack, SkipForward } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -65,6 +65,20 @@ export default function App() {
   const playVideo = (video: DriveFile) => {
     setSelectedVideo(video);
     setView('player');
+  };
+
+  const playNext = () => {
+    if (!selectedVideo || videos.length === 0) return;
+    const currentIndex = videos.findIndex(v => v.id === selectedVideo.id);
+    const nextIndex = (currentIndex + 1) % videos.length;
+    setSelectedVideo(videos[nextIndex]);
+  };
+
+  const playPrevious = () => {
+    if (!selectedVideo || videos.length === 0) return;
+    const currentIndex = videos.findIndex(v => v.id === selectedVideo.id);
+    const prevIndex = (currentIndex - 1 + videos.length) % videos.length;
+    setSelectedVideo(videos[prevIndex]);
   };
 
   const filteredVideos = videos.filter(v => 
@@ -243,17 +257,63 @@ export default function App() {
               exit={{ opacity: 0, scale: 0.9 }}
               className="flex flex-col items-center gap-6"
             >
-              <div className="w-full aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+              <div className="w-full aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border-8 border-white relative group">
                 <video 
+                  key={selectedVideo.id}
                   src={`/api/drive/stream/${selectedVideo.id}`}
                   controls
                   autoPlay
                   onTimeUpdate={handleVideoTimeUpdate}
                   onLoadedMetadata={handleVideoLoadedMetadata}
+                  onEnded={playNext}
                   className="w-full h-full"
                 />
+                
+                {/* Overlay Navigation (Mobile Friendly) */}
+                <div className="absolute inset-y-0 left-0 w-1/4 flex items-center justify-start pl-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); playPrevious(); }}
+                    className="p-4 bg-black/40 text-white rounded-full pointer-events-auto hover:bg-black/60 transition-colors"
+                  >
+                    <SkipBack className="w-8 h-8" />
+                  </button>
+                </div>
+                <div className="absolute inset-y-0 right-0 w-1/4 flex items-center justify-end pr-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); playNext(); }}
+                    className="p-4 bg-black/40 text-white rounded-full pointer-events-auto hover:bg-black/60 transition-colors"
+                  >
+                    <SkipForward className="w-8 h-8" />
+                  </button>
+                </div>
               </div>
-              <h3 className="text-2xl font-black text-center text-[#4A4A4A]">{selectedVideo.name}</h3>
+
+              <div className="w-full flex flex-col items-center gap-2">
+                <div className="flex items-center gap-4">
+                  <button 
+                    onClick={playPrevious}
+                    className="p-4 bg-white shadow-md rounded-2xl hover:bg-gray-50 transition-colors text-[#4ECDC4]"
+                    title="Previous Video"
+                  >
+                    <SkipBack className="w-6 h-6" />
+                  </button>
+                  
+                  <div className="px-6 py-2 bg-white shadow-sm rounded-full border-2 border-[#4ECDC4]/20">
+                    <span className="font-black text-[#4ECDC4]">
+                      Video {videos.findIndex(v => v.id === selectedVideo.id) + 1} of {videos.length}
+                    </span>
+                  </div>
+
+                  <button 
+                    onClick={playNext}
+                    className="p-4 bg-white shadow-md rounded-2xl hover:bg-gray-50 transition-colors text-[#4ECDC4]"
+                    title="Next Video"
+                  >
+                    <SkipForward className="w-6 h-6" />
+                  </button>
+                </div>
+                <h3 className="text-2xl font-black text-center text-[#4A4A4A] mt-2">{selectedVideo.name}</h3>
+              </div>
             </motion.div>
           )}
 
