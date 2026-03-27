@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="app-inspection">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/app-inspection/backgroundtask-inspection.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/app-inspection/database-inspector.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/app-inspection/network-inspector.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/app-inspection/layoutinspector-view-inspection.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/app-inspection/sqlite-inspection.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

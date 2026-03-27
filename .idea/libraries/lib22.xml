@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="lib22">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/jps-launcher.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/maven-resolver-transport-http.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/java-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/sa-jdwp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/jgoodies-common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/completion-ranking-java.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/maven-resolver-connector-basic.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/aether-dependency-resolver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/kotlin-metadata.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/maven-resolver-transport-file.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/jps-javac-extension.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/jps-builders.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/jb-jdi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/javac2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/debugger-memory-agent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/netty-codec-protobuf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/jps-builders-6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

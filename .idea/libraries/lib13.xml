@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gradle-java/lib/gradle-jps.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gradle-java/lib/gradle-java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

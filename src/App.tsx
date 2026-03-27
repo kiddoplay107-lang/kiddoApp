@@ -5,9 +5,10 @@ import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { Capacitor } from '@capacitor/core';
 
+// IMPORTANT: Update this URL to your actual Vercel deployment URL
 const BASE_URL = Capacitor.getPlatform() === 'web' 
   ? '' 
-  : 'https://kiddo-lyv99appk-kiddoplay107-1908s-projects.vercel.app';
+  : 'https://kiddo-app-two.vercel.app';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -154,7 +155,11 @@ export default function App() {
               <AlertCircle className="w-6 h-6 shrink-0" />
               <div className="flex-1 font-bold">{error}</div>
               <button 
-                onClick={() => view === 'folders' ? fetchFolders() : fetchVideos(selectedFolder!)}
+                onClick={() => {
+                  if (view === 'folders') fetchFolders();
+                  else if (view === 'videos' && selectedFolder) fetchVideos(selectedFolder);
+                  else fetchFolders(); // Default to folders if we don't know where we are
+                }}
                 className="p-2 hover:bg-red-100 rounded-full transition-colors"
               >
                 <RefreshCw className="w-5 h-5" />
@@ -364,18 +369,6 @@ export default function App() {
           )}
         </AnimatePresence>
 
-        {view === 'menu' && (
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-12 p-6 bg-white rounded-3xl shadow-sm border-2 border-dashed border-[#FF6B6B]/20 text-center"
-          >
-            <h3 className="text-xl font-bold text-[#FF6B6B] mb-2">📱 Install as an App</h3>
-            <p className="text-gray-600 text-sm">
-              Tap the <strong>three dots (⋮)</strong> in Chrome and select <strong>"Add to Home Screen"</strong> to use KiddoPlay like a real Android app!
-            </p>
-          </motion.div>
-        )}
       </main>
     </div>
   );

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="screen-sharing-agent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/screen-sharing-agent/screen-sharing-agent.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

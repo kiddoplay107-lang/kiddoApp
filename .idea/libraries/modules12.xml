@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="modules12">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.featuresTrainer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.jvm.analysis.impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.langInjection.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.vcs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.execution.impl.frontend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.unscramble.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.execution.impl.backend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.langInjection.jps.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/modules/intellij.java.structuralSearch.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

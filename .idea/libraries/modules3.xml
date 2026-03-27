@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="modules3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/json/lib/modules/intellij.json.backend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/json/lib/modules/intellij.json.backend.regexp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

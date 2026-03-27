@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dev">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/dev/lib/dev.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

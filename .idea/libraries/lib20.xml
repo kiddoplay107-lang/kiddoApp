@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib20">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-git/lib/git4idea-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-git/lib/vcs-git.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

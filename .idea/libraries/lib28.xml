@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib28">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/testng/lib/testng-plugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/testng/lib/testng.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/testng/lib/testng-rt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

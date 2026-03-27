@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="modules9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/properties/lib/modules/intellij.properties.backend.psi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/properties/lib/modules/intellij.properties.backend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

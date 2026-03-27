@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="modules8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-github/lib/modules/intellij.vcs.github.git.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-github/lib/modules/intellij.vcs.github.tracker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-github/lib/modules/intellij.vcs.github.ultimatePromo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-github/lib/modules/intellij.vcs.github.json.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

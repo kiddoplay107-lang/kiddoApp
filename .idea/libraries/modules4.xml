@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="modules4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/cidr-clangd/lib/modules/intellij.cidr.clangd.legacyBridge.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/cidr-clangd/lib/modules/intellij.cidr.clangd.clangFormat.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/cidr-clangd/lib/modules/intellij.cidr.clangd.schema.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

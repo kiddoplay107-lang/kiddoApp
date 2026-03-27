@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/performanceTesting/lib/assertj-swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/performanceTesting/lib/github.oshi.core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/performanceTesting/lib/performanceTesting.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

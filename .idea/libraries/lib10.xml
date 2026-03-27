@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/firebase/lib/firebase.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/firebase/lib/firebase_kt_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/firebase/lib/firebase_provisioning_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/firebase/lib/firebase.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/firebase/lib/protobuf-java-util-3.22.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/firebase/lib/google-api-services-cloudresourcemanager-v3-rev20230416-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="rt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/rt/debugger-agent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/rt/netty-jps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

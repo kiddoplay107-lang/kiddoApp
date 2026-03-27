@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib24">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/design-tools/lib/design-tools.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/design-tools/lib/layoutlib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/design-tools/lib/design-tools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java-coverage/lib/coverage-report.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java-coverage/lib/java-coverage.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java-coverage/lib/jacoco.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java-coverage/lib/java-coverage-rt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

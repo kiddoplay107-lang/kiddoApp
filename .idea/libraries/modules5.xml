@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="modules5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/markdown/lib/modules/intellij.markdown.frontend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/markdown/lib/modules/intellij.markdown.backend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="intellij.sh.backend">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/sh-plugin/lib/modules/intellij.sh.backend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

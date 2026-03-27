@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/repository-search/lib/repository-search.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/repository-search/lib/package-search-api-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/repository-search/lib/maven-model.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/repository-search/lib/kotlinx-document-store-mvstore.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

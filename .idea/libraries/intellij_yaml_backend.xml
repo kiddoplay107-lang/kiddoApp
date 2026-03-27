@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="intellij.yaml.backend">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/yaml/lib/modules/intellij.yaml.backend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

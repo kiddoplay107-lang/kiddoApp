@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="lib21">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/aicode_grpc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/libjourneys-java-proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/libgoogle_auth_intellij_lib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/mcp-sdk-libraries.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-facet-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/anthropic-java-client-okhttp-2.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/aida_protobuf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-queryparser-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/libserviceusage_v1_java_lib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/annotation-jvm-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/libfeedback_java_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/aiplugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/anthropic-java-core-2.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-highlighter-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/libv1internal_java_rest.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-backward-codecs-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-memory-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-queries-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/lucene-sandbox-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/google-api-services-cloudresourcemanager-v1beta1-rev20240128-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/jackson-datatype-jsr310-2.18.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/aida_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/sqlite-jdbc-3.43.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/openai-java-core-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/libagent_log_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/gemini_plugin_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/gemini.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/aida_grpc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/jackson-datatype-jdk8-2.18.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/lib/openai-java-client-okhttp-4.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

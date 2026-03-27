@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="module-descriptors">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/modules/module-descriptors.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

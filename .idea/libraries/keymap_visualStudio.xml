@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="keymap-visualStudio">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/keymap-visualStudio/lib/keymap-visualStudio.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

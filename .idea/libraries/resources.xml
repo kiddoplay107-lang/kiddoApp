@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="resources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/trace_agent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/threading_agent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/insights-lint-bundled.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/profilers-transform.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/perfa.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android/resources/androidAnnotations.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

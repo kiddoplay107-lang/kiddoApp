@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/targetsdkversion-upgrade-assistant/lib/targetsdkversion-upgrade-assistant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/targetsdkversion-upgrade-assistant/lib/targetsdkversion-upgrade-assistant.so.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

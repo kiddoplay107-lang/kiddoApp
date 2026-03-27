@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="modules6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-gitlab/lib/modules/intellij.vcs.gitlab.yaml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-gitlab/lib/modules/intellij.vcs.gitlab.git.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

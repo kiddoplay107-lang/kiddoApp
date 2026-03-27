@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/test-recorder/lib/test-recorder.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/test-recorder/lib/swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/test-recorder/lib/test-recorder.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/test-recorder/lib/uiautomatorviewer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

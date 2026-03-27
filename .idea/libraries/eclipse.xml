@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="eclipse">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java/lib/ecj/eclipse.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

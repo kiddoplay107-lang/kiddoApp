@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="intellij.performanceTesting.frontend">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/performanceTesting/lib/modules/intellij.performanceTesting.frontend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

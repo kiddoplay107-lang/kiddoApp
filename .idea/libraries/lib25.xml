@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib25">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android-compose-ide-plugin/lib/android-compose-ide-plugin.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android-compose-ide-plugin/lib/android-compose-ide-plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

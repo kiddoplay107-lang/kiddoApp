@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vcs-gitlab">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-gitlab/lib/vcs-gitlab.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

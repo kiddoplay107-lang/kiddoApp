@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gradle-dsl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gradle-dsl/lib/gradle-dsl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

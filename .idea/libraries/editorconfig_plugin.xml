@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="editorconfig-plugin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/editorconfig-plugin/lib/editorconfig-plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

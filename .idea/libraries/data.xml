@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="data">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/design-tools/resources/layoutlib/data/framework_res.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/design-tools/resources/layoutlib/data/layoutlib-extensions.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

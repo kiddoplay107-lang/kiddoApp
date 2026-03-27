@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="modules10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/editorconfig-plugin/lib/modules/intellij.editorconfig.frontend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/editorconfig-plugin/lib/modules/intellij.editorconfig.common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/editorconfig-plugin/lib/modules/intellij.editorconfig.backend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

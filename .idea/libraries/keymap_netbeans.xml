@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="keymap-netbeans">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/keymap-netbeans/lib/keymap-netbeans.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

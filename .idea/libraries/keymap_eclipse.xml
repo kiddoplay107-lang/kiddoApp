@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="keymap-eclipse">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/keymap-eclipse/lib/keymap-eclipse.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="modules11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/textmate-plugin/lib/modules/intellij.textmate.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/textmate-plugin/lib/modules/intellij.textmate.core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/textmate-plugin/lib/modules/intellij.textmate.joni.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/textmate-plugin/lib/modules/intellij.textmate.common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/textmate-plugin/lib/modules/intellij.textmate.backend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

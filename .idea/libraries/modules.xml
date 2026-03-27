@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="modules">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/c/lib/modules/intellij.cidr.modulemap.language.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/c/lib/modules/intellij.c.testing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/c/lib/modules/intellij.c.debugger.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/c/lib/modules/intellij.c.core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

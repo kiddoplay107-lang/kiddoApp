@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="modules2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/toml/lib/modules/intellij.toml.backend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/toml/lib/modules/intellij.toml.frontend.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

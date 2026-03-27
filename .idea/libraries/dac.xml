@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dac">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/gemini/resources/kb_zip/dac.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

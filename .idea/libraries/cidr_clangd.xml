@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cidr-clangd">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/cidr-clangd/lib/cidr-clangd.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

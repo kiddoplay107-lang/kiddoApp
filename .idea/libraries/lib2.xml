@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-svn/lib/sqlite.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/vcs-svn/lib/vcs-svn.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

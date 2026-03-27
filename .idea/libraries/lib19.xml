@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="lib19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/google-api-services-serviceusage-v1-rev20240220-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/directaccess.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/google-api-services-testing-v1-rev20250327-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/libadb_proxy_java_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/device_streaming_kt_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/ftl_client_kt_proto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/directaccess.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/google-api-services-monitoring-v3-rev20230806-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/google-api-services-toolresults-v1beta3-rev20230410-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/google-api-services-storage-v1-rev20230301-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/directaccess/lib/google-api-services-cloudbilling-v1-rev20240119-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

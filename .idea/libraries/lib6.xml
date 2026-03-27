@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android-ndk/lib/android-ndk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android-ndk/lib/org.eclipse.equinox.common_3.10.500.v20190815-1535.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android-ndk/lib/org.eclipse.cdt.core_6.8.1.201907021957.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/android-ndk/lib/android-ndk.so.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

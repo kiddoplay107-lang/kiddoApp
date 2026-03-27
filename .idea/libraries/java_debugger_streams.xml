@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="java-debugger-streams">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/java-debugger-streams/lib/java-debugger-streams.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

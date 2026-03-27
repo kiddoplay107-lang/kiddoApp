@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="git4insights">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/git4insights/lib/git4insights.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

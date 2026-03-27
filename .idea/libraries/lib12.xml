@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib12">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/tasks/lib/http-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/tasks/lib/axis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/tasks/lib/commons-discovery.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/tasks/lib/tasks-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

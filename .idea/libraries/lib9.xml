@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/url-assistant/lib/url-assistant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/url-assistant/lib/url-assistant.so.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-studio/plugins/url-assistant/lib/urlassistant_proto.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

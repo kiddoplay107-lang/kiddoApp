@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { google } from 'googleapis';
+import { allowCors } from '../cors';
 
 const getDriveClient = () => {
   const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON || '{}');
@@ -10,7 +11,7 @@ const getDriveClient = () => {
   return google.drive({ version: 'v3', auth });
 };
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+const handler = async (req: VercelRequest, res: VercelResponse) => {
   try {
     const drive = getDriveClient();
     const rootId = process.env.GOOGLE_DRIVE_ROOT_FOLDER_ID;
@@ -28,3 +29,5 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.status(500).json({ error: error.message });
   }
 }
+
+export default allowCors(handler);
