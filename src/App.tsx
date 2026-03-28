@@ -46,13 +46,14 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`${BASE_URL}/api/drive/folders`);
-      if (!res.ok) throw new Error('Could not connect to Google Drive');
+      const url = `${BASE_URL}/api/drive/folders`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`Server error: ${res.status} ${res.statusText}`);
       const data = await res.json();
       setFolders(data);
       setView('folders');
     } catch (err: any) {
-      setError(err.message || 'Failed to fetch folders');
+      setError(`${err.message} (URL: ${BASE_URL})`);
       console.error('Failed to fetch folders', err);
     } finally {
       setLoading(false);
@@ -64,13 +65,14 @@ export default function App() {
     setError(null);
     setSelectedFolder(folder);
     try {
-      const res = await fetch(`${BASE_URL}/api/drive/videos/${folder.id}`);
-      if (!res.ok) throw new Error('Could not fetch videos from this folder');
+      const url = `${BASE_URL}/api/drive/videos/${folder.id}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`Server error: ${res.status} ${res.statusText}`);
       const data = await res.json();
       setVideos(data);
       setView('videos');
     } catch (err: any) {
-      setError(err.message || 'Failed to fetch videos');
+      setError(`${err.message} (URL: ${BASE_URL})`);
       console.error('Failed to fetch videos', err);
     } finally {
       setLoading(false);
@@ -143,6 +145,21 @@ export default function App() {
       </header>
 
       <main className="flex-1 p-6 max-w-4xl mx-auto w-full overflow-y-auto relative">
+        {/* Global Loader Overlay */}
+        <AnimatePresence>
+          {loading && view === 'menu' && (
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-0 z-50 bg-[#FFFAF0]/80 backdrop-blur-sm flex flex-col items-center justify-center gap-4"
+            >
+              <Loader2 className="w-16 h-16 animate-spin text-[#4ECDC4]" />
+              <p className="text-xl font-black text-[#4ECDC4] animate-pulse">Connecting...</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         {/* Error Message */}
         <AnimatePresence>
           {error && (
@@ -189,6 +206,15 @@ export default function App() {
                 color="bg-[#4ECDC4]"
                 onClick={fetchFolders}
               />
+              <button 
+                onClick={() => {
+                  localStorage.clear();
+                  window.location.reload();
+                }}
+                className="col-span-full mt-4 text-xs text-gray-400 hover:text-[#FF6B6B] transition-colors"
+              >
+                Reset App Cache
+              </button>
             </motion.div>
           )}
 
@@ -370,6 +396,11 @@ export default function App() {
         </AnimatePresence>
 
       </main>
+
+      {/* Version Info for Debugging */}
+      <div className="p-2 text-[10px] text-gray-300 text-center font-mono">
+        v1.1 | {Capacitor.getPlatform()} | {BASE_URL}
+      </div>
     </div>
   );
 }
