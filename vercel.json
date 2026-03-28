@@ -1,7 +1,13 @@
 {
   "version": 2,
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "vercel-node@latest"
+    }
+  },
   "rewrites": [
     { "source": "/api/drive/videos/:folderId", "destination": "/api/drive/videos/[folderId]" },
-    { "source": "/api/drive/stream/:fileId", "destination": "/api/drive/stream/[fileId]" }
+    { "source": "/api/drive/stream/:fileId", "destination": "/api/drive/stream/[fileId]" },
+    { "source": "/api/(.*)", "destination": "/api/$1" }
   ]
 }
