@@ -49,8 +49,15 @@ export default function App() {
       const url = `${BASE_URL}/api/drive/folders`;
       const res = await fetch(url);
       if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || `Server error: ${res.status} ${res.statusText}`);
+        const text = await res.text().catch(() => 'No response body');
+        let errorMsg = `Server error: ${res.status} ${res.statusText}`;
+        try {
+          const errorData = JSON.parse(text);
+          errorMsg = errorData.error || errorMsg;
+        } catch (e) {
+          errorMsg += ` - Details: ${text.substring(0, 150)}...`;
+        }
+        throw new Error(errorMsg);
       }
       const data = await res.json();
       setFolders(data);
@@ -71,8 +78,15 @@ export default function App() {
       const url = `${BASE_URL}/api/drive/videos/${folder.id}`;
       const res = await fetch(url);
       if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || `Server error: ${res.status} ${res.statusText}`);
+        const text = await res.text().catch(() => 'No response body');
+        let errorMsg = `Server error: ${res.status} ${res.statusText}`;
+        try {
+          const errorData = JSON.parse(text);
+          errorMsg = errorData.error || errorMsg;
+        } catch (e) {
+          errorMsg += ` - Details: ${text.substring(0, 150)}...`;
+        }
+        throw new Error(errorMsg);
       }
       const data = await res.json();
       setVideos(data);

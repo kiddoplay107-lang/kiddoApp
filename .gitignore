@@ -1,8 +1,8 @@
-node_modules
-dist
-package-lock.json
-.env
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
 *.log
-android/app/build
-android/.gradle
-android/local.properties
+.env*
+!.env.example
