@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/drive/videos/:folderId", "destination": "/api/drive/videos/[folderId]" },
+    { "source": "/api/drive/stream/:fileId", "destination": "/api/drive/stream/[fileId]" }
+  ]
+}
