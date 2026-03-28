@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { google } from 'googleapis';
-import { allowCors } from '../cors';
+import { allowCors } from '../cors.js';
 
 const getDriveClient = () => {
   const json = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
