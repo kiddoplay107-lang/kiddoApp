@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KiddoPlay</string>
+    <string name="title_activity_main">KiddoPlay</string>
+    <string name="package_name">com.kiddoplay.app</string>
+    <string name="custom_url_scheme">com.kiddoplay.app</string>
+</resources>

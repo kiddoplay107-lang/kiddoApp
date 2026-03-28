@@ -48,7 +48,10 @@ export default function App() {
     try {
       const url = `${BASE_URL}/api/drive/folders`;
       const res = await fetch(url);
-      if (!res.ok) throw new Error(`Server error: ${res.status} ${res.statusText}`);
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || `Server error: ${res.status} ${res.statusText}`);
+      }
       const data = await res.json();
       setFolders(data);
       setView('folders');
@@ -67,7 +70,10 @@ export default function App() {
     try {
       const url = `${BASE_URL}/api/drive/videos/${folder.id}`;
       const res = await fetch(url);
-      if (!res.ok) throw new Error(`Server error: ${res.status} ${res.statusText}`);
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || `Server error: ${res.status} ${res.statusText}`);
+      }
       const data = await res.json();
       setVideos(data);
       setView('videos');

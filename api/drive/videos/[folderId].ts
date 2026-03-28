@@ -3,12 +3,20 @@ import { google } from 'googleapis';
 import { allowCors } from '../../cors';
 
 const getDriveClient = () => {
-  const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON || '{}');
-  const auth = new google.auth.GoogleAuth({
-    credentials,
-    scopes: ['https://www.googleapis.com/auth/drive.readonly'],
-  });
-  return google.drive({ version: 'v3', auth });
+  const json = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+  if (!json) {
+    throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_JSON environment variable');
+  }
+  try {
+    const credentials = JSON.parse(json);
+    const auth = new google.auth.GoogleAuth({
+      credentials,
+      scopes: ['https://www.googleapis.com/auth/drive.readonly'],
+    });
+    return google.drive({ version: 'v3', auth });
+  } catch (e: any) {
+    throw new Error(`Invalid GOOGLE_SERVICE_ACCOUNT_JSON: ${e.message}`);
+  }
 };
 
 const handler = async (req: VercelRequest, res: VercelResponse) => {
